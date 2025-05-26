@@ -1,3 +1,6 @@
+// 確保在 HTML 文件中引入 ml5.js，例如：
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.6.0/ml5.min.js"></script>
+
 let video;
 let facemesh;
 let predictions = [];
@@ -23,7 +26,7 @@ function setup() {
 }
 
 function modelReady() {
-  // 模型載入完成，可選擇顯示訊息
+  console.log('Facemesh model loaded'); // 確認模型已載入
 }
 
 function draw() {
